@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wiki | IT & Technik-AG an der Mörike-Schule</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>IT & Technik-AG an der Mörike-Schule</h1>
+      <h1>Wiki</h1>
+    </header>
+
+    <main>
+      <p>Mit HTML & CSS kann man tolle Webseiten erstellen</p>
+      <h2>Inhalt</h2>
+
+      <ol>
+        <li><a href="#einstieg-in-html">Einstieg in HTML</a></li>
+      </ol>
+
+
+      <h2 id="einstieg-in-html">Einstieg in HTML</h2>
+
+      <h3>Grundgerüst</h3>
+      <p>Das Grundgerüst eines HTMT5-Dokuments sieht folgendermaßen aus:</p>
+      <code>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;head&gt;<br>
+        &lt;meta charset="utf-8"&gt;<br>
+        &lt;title&gt;Titel deiner Webseite&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        ...<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+      </code>
+
+      <h3>Text</h3>
+      <p>Um einen normalen Text zu erstellen verwendet man folgenden Tag:</p>
+      <code>&lt;p&gt;Hier ist dein Text&lt;/p&gt;</code>
+
+      <h3>Überschriften</h3>
+      <p>Es gibt sechs vierschiedene Größen von Überschriften, vobei h1 die größe ist:</p>
+      <code>
+        &lt;h1&gt;Überschrift 1&lt;/h1&gt;<br>
+        &lt;h2&gt;Überschrift 2&lt;/h2&gt;<br>
+        &lt;h3&gt;Überschrift 3&lt;/h3&gt;<br>
+        &lt;h4&gt;Überschrift 4&lt;/h4&gt;<br>
+        &lt;h5&gt;Überschrift 5&lt;/h5&gt;<br>
+        &lt;h6&gt;Überschrift 6&lt;/h6&gt;<br>
+      </code>
+
+      <h3>Zeilenumbruch</h3>
+      <p>Wenn man Zeilenumbrüche im HTML-Dokument macht, werden diese nicht automatisch auch auf der Webseite gemacht. Dafür braucht man einen extra Tag am Ende der Zeile:</p>
+      <code>
+        &lt;p&gt;<br>
+        Zeile 1&lt;br&gt;<br>
+        Zeile 2&lt;br&gt;<br>
+        Zeile 3&lt;br&gt;<br>
+        &lt;/p&gt;
+      </code>
+
+      <h3>Aufbau eines Tags</h3>
+      <p>Das folgende Bild zeigt den Aufbau eines HTML-Tags:</p>
+      <img src="https://cdn.kastatic.org/ka-perseus-images/2b914caea7fdf9df8ff30e4780096d38624cab4f.png">
+
+      <h3>Text formatieren</h3>
+      <p>Um einen Text hervorzuheben oder kursiv zu stellen, gibt es zwei Tags, die man um die Wörter herumschreibt:</p>
+      <code>&lt;p&gt;Dieses Wort ist &lt;strong&gt;dick&lt;/strong&gt; und dieses &lt;em&gt;kursiv&lt;/em&gt;.&lt;/p&gt;</code>
+
+      <h3>Listen</h3>
+      <p>Es gibt numerierte und unnumerierte Listen:</p>
+      <code>
+        &lt;ol&gt;<br>
+        &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
+        &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
+        &lt;/ol&gt;<br>
+        <br>
+        &lt;ul&gt;<br>
+        &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
+        &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
+        &lt;/ul&gt;<br>
+      </code>
+
+      <h3>Bilder</h3>
+      <p>Auch Bilder können auf einer Webseite eingebunden werden. Wenn das Bild sich auf einer anderen Webseite des Internets befindet wird die URL des Bildes eingefügt:</p>
+      <code>&lt;img src="http://wikipedia.org/bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
+      <p>Das alt-Attribut legt einen Bildtitel fest, der angezeigt wird falls, das Bild gelöscht wurde oder für Leute, die nicht sehen können. Es ist also, wichtig immer ein Alt-Attribut festzulegen, damit jeder deine Webseite versteht. Das width-Attribut left die Breite des Bildes fest. Hier kann mit Pixeln (500px) oder mit Prozentzahlen (50%) gearbeitet werden.</p>
+      <p>Wenn Bilder in dem selben Ordner, wie die HTML-Datei liegen, kann das Bild auch so eingefügt werden:</p>
+      <code>&lt;img src="bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
+    </main>
+  </body>
+<html>
