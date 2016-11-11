@@ -20,94 +20,184 @@
 
         <ol>
           <li><a href="#einstieg-in-html">Einstieg in HTML</a></li>
+          <li><a href="#einstieg-in-css">Einstieg in CSS</a></li>
+          <li><a href="#weitere-html-tags">Weitere HTML Tags</a></li>
         </ol>
       </div>
 
-      <div class="kapitel">
-        <h2 id="einstieg-in-html">Einstieg in HTML</h2>
+      <div id="einstieg-in-html">
+        <div class="kapitel">
+          <h2>Einstieg in HTML</h2>
+        </div>
+
+        <div class="a">
+          <h3>Grundgerüst</h3>
+          <p>Das Grundgerüst eines HTMT5-Dokuments sieht folgendermaßen aus:</p>
+          <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;meta charset="utf-8"&gt;<br>
+            &lt;title&gt;Titel deiner Webseite&lt;/title&gt;<br>
+            &lt;style&gt;<a href="#einstieg-in-css">Style-Informationen</a>&lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            ...<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+          </code>
+        </div>
+
+        <div class="b">
+          <h3>Text</h3>
+          <p>Um einen normalen Text zu erstellen verwendet man folgenden Tag:</p>
+          <code>&lt;p&gt;Hier ist dein Text&lt;/p&gt;</code>
+
+          <h3>Überschriften</h3>
+          <p>Es gibt sechs vierschiedene Größen von Überschriften, vobei h1 die größe ist:</p>
+          <code>
+            &lt;h1&gt;Überschrift 1&lt;/h1&gt;<br>
+            &lt;h2&gt;Überschrift 2&lt;/h2&gt;<br>
+            &lt;h3&gt;Überschrift 3&lt;/h3&gt;<br>
+            &lt;h4&gt;Überschrift 4&lt;/h4&gt;<br>
+            &lt;h5&gt;Überschrift 5&lt;/h5&gt;<br>
+            &lt;h6&gt;Überschrift 6&lt;/h6&gt;<br>
+          </code>
+        </div>
+
+        <div class="c">
+          <h3>Zeilenumbruch</h3>
+          <p>Wenn man Zeilenumbrüche im HTML-Dokument macht, werden diese nicht automatisch auch auf der Webseite gemacht. Dafür braucht man einen extra Tag am Ende der Zeile:</p>
+          <code>
+            &lt;p&gt;<br>
+            Zeile 1&lt;br&gt;<br>
+            Zeile 2&lt;br&gt;<br>
+            Zeile 3&lt;br&gt;<br>
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <div class="d">
+          <h3>Aufbau eines Tags</h3>
+          <p>Das folgende Bild zeigt den Aufbau eines HTML-Tags:</p>
+          <img src="https://cdn.kastatic.org/ka-perseus-images/2b914caea7fdf9df8ff30e4780096d38624cab4f.png">
+        </div>
+
+        <div class="e">
+          <h3>Text formatieren</h3>
+          <p>Um einen Text hervorzuheben oder kursiv zu stellen, gibt es zwei Tags, die man um die Wörter herumschreibt:</p>
+          <code>&lt;p&gt;Dieses Wort ist &lt;strong&gt;dick&lt;/strong&gt; und dieses &lt;em&gt;kursiv&lt;/em&gt;.&lt;/p&gt;</code>
+        </div>
+
+        <div class="f">
+          <h3>Listen</h3>
+          <p>Es gibt numerierte und unnumerierte Listen:</p>
+          <code>
+            &lt;ol&gt;<br>
+            &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
+            &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
+            &lt;/ol&gt;<br>
+            <br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
+            &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+          </code>
+        </div>
+
+        <div class="g">
+          <h3>Bilder</h3>
+          <p>Auch Bilder können auf einer Webseite eingebunden werden. Wenn das Bild sich auf einer anderen Webseite des Internets befindet wird die URL des Bildes eingefügt:</p>
+          <code>&lt;img src="http://wikipedia.org/bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
+          <p>Das alt-Attribut legt einen Bildtitel fest, der angezeigt wird falls, das Bild gelöscht wurde oder für Leute, die nicht sehen können. Es ist also, wichtig immer ein Alt-Attribut festzulegen, damit jeder deine Webseite versteht. Das width-Attribut left die Breite des Bildes fest. Hier kann mit Pixeln (500px) oder mit Prozentzahlen (50%) gearbeitet werden.</p>
+          <p>Wenn Bilder in dem selben Ordner, wie die HTML-Datei liegen, kann das Bild auch so eingefügt werden:</p>
+          <code>&lt;img src="bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
+        </div>
       </div>
 
-      <div id="grundgeruest">
-        <h3>Grundgerüst</h3>
-        <p>Das Grundgerüst eines HTMT5-Dokuments sieht folgendermaßen aus:</p>
-        <code>
-          &lt;!DOCTYPE html&gt;<br>
-          &lt;html&gt;<br>
-          &lt;head&gt;<br>
-          &lt;meta charset="utf-8"&gt;<br>
-          &lt;title&gt;Titel deiner Webseite&lt;/title&gt;<br>
-          &lt;/head&gt;<br>
-          &lt;body&gt;<br>
-          ...<br>
-          &lt;/body&gt;<br>
-          &lt;/html&gt;<br>
-        </code>
-      </div>
+      <div id="einstieg-in-css">
+        <div class="kapitel">
+          <h2>Einstieg in CSS</h2>
+        </div>
 
-      <div id="text">
-        <h3>Text</h3>
-        <p>Um einen normalen Text zu erstellen verwendet man folgenden Tag:</p>
-        <code>&lt;p&gt;Hier ist dein Text&lt;/p&gt;</code>
+        <div class="h">
+          <h3>Basics</h3>
+          <p>CSS ist eine Programmiersprache, die genutzt wird, um das Aussehen der Webseite zu verändern. Die Style-Informationen werden standardmäßig im Style-Tag des Headers eingefügt.</p>
+          <p>Um alle Elemente desselben Tags zu verwenden, wird der Name des Tags verwendet:</p>
+          <code>p {<br>
+              color: blue;<br>
+            }
+          </code>
+        </div>
 
-        <h3>Überschriften</h3>
-        <p>Es gibt sechs vierschiedene Größen von Überschriften, vobei h1 die größe ist:</p>
-        <code>
-          &lt;h1&gt;Überschrift 1&lt;/h1&gt;<br>
-          &lt;h2&gt;Überschrift 2&lt;/h2&gt;<br>
-          &lt;h3&gt;Überschrift 3&lt;/h3&gt;<br>
-          &lt;h4&gt;Überschrift 4&lt;/h4&gt;<br>
-          &lt;h5&gt;Überschrift 5&lt;/h5&gt;<br>
-          &lt;h6&gt;Überschrift 6&lt;/h6&gt;<br>
-        </code>
-      </div>
+        <div class="i">
+          <h3>ID'a</h3>
+          <p>ID's werden verwendet, um ein bestimmtes Element anzusprechen. Diese werden folgenderweiße festgelegt:</p>
+          <code>&lt;p id="großer-text"&gt;...&lt;/p&gt;</code>
+          <p>In CSS werden ID's mit einer vorgestellten Raute angesprochen:</p>
+          <code>#großer-text {<br>
+              color: red;<br>
+            }
+          </code>
+        </div>
 
-      <div id="zeilenumbruch">
-        <h3>Zeilenumbruch</h3>
-        <p>Wenn man Zeilenumbrüche im HTML-Dokument macht, werden diese nicht automatisch auch auf der Webseite gemacht. Dafür braucht man einen extra Tag am Ende der Zeile:</p>
-        <code>
-          &lt;p&gt;<br>
-          Zeile 1&lt;br&gt;<br>
-          Zeile 2&lt;br&gt;<br>
-          Zeile 3&lt;br&gt;<br>
-          &lt;/p&gt;
-        </code>
-      </div>
+        <div class="j">
+          <h3>Klassen</h3>
+          <p>Wenn man mehrere Elemente ansprechen möchte, können Klassen verwendet werden. Dabei wird jedes Element folgendermaßen angesprochen:</p>
+          <code>
+            &lt;p class="kleine-texte"&gt;...&lt;/p&gt;<br>
+            &lt;h1 class="kleine-texte"&gt;...&lt;/p&gt;<br>
+          </code>
+          <p>Um Klassen in CSS anzusprechen werden vorangestellte Punkte verwendet:</p>
+          <code>
+            .kleine-texte {<br>
+              color: green;<br>
+            }
+          </code>
+        </div>
 
-      <div id="aufbau-eines-tags">
-        <h3>Aufbau eines Tags</h3>
-        <p>Das folgende Bild zeigt den Aufbau eines HTML-Tags:</p>
-        <img src="https://cdn.kastatic.org/ka-perseus-images/2b914caea7fdf9df8ff30e4780096d38624cab4f.png">
-      </div>
-
-      <div id="text-formatieren">
-        <h3>Text formatieren</h3>
-        <p>Um einen Text hervorzuheben oder kursiv zu stellen, gibt es zwei Tags, die man um die Wörter herumschreibt:</p>
-        <code>&lt;p&gt;Dieses Wort ist &lt;strong&gt;dick&lt;/strong&gt; und dieses &lt;em&gt;kursiv&lt;/em&gt;.&lt;/p&gt;</code>
-      </div>
-
-      <div id="listen">
-        <h3>Listen</h3>
-        <p>Es gibt numerierte und unnumerierte Listen:</p>
-        <code>
-          &lt;ol&gt;<br>
-          &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
-          &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
-          &lt;/ol&gt;<br>
+        <div class="k">
+          <h3>Farben</h3>
+          <p>Mit folgendem Tag kann die Farbe der Schrift verändert werden:</p>
+          <code>p {<br>
+              color: orange;<br>
+            }
+          </code>
+          <p>Auch die Hintergrundfarbe von Schrift kann verändert werden:</p>
+          <code>p {<br>
+              background-color: blue;
+            }
+          </code>
+          <p>Wenn man die Hintergrundfarbe der ganzen Webseite verändern möchte, gibt man <code>body</code> (hier: anstelle von p) als Element an.</p>
           <br>
-          &lt;ul&gt;<br>
-          &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
-          &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
-          &lt;/ul&gt;<br>
-        </code>
+          <p>Wenn man nicht nur die wenigen Standardfarben (wie red, blue, green, orange ...) verwenden will, kann man auch den RGB-Farbecode verwenden. Auf <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool" target="_blank">dieser Webseite</a> findet man ein Tool um den Farbcode von anderen Farben herauszufinden:</p>
+          <code>p {<br>
+              rgb(193, 66, 66)<br>
+            }
+          </code>
+        </div>
       </div>
 
-      <div id="bilder">
-        <h3>Bilder</h3>
-        <p>Auch Bilder können auf einer Webseite eingebunden werden. Wenn das Bild sich auf einer anderen Webseite des Internets befindet wird die URL des Bildes eingefügt:</p>
-        <code>&lt;img src="http://wikipedia.org/bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
-        <p>Das alt-Attribut legt einen Bildtitel fest, der angezeigt wird falls, das Bild gelöscht wurde oder für Leute, die nicht sehen können. Es ist also, wichtig immer ein Alt-Attribut festzulegen, damit jeder deine Webseite versteht. Das width-Attribut left die Breite des Bildes fest. Hier kann mit Pixeln (500px) oder mit Prozentzahlen (50%) gearbeitet werden.</p>
-        <p>Wenn Bilder in dem selben Ordner, wie die HTML-Datei liegen, kann das Bild auch so eingefügt werden:</p>
-        <code>&lt;img src="bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
+      <div id="weitere-html-tags">
+        <div class="kapitel">
+          <h2>Weitere HTML Tags</h2>
+        </div>
+
+        <div class="l">
+          <h3>Links</h3>
+          <p>Um andere Webseiten zu verlinken, wird der <code>a</code>-Tag verwendet:</p>
+          <code>&lt;a href="http://wikipedia.org"&gt;Wikipedia&lt;/&gt;</code>
+          <p>Wenn man möchte kann man auch auch auf eine andere HTML-Datei verlinken, die sich im selben Ordner befindet:</p>
+          <code>&lt;a href="über-mich.html"&gt;Über mich&lt;/a&gt;</code>
+          <p>Außerdem ist es auch möglich, dass man zu einer anderen ID im selben Dokument springt</p>
+          <code>&lt;a href="#großer-text"&gt;Springe zu großer Text&lt;/a&gt;</code>
+        </div>
+
+        <!--
+        <div class="m">
+          <h3>Tabellen</h3>
+        </div>
+        -->
       </div>
     </main>
   </body>

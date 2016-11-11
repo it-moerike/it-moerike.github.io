@@ -41,32 +41,70 @@ header {
 }
 
 /* Einstieg in HTML */
-#grundgeruest {
+.a {
   background-color: #E91E63;
 }
 
-#text {
+.b {
   background-color: #9C27B0;
 }
 
-#zeilenumbruch {
+.c {
   background-color: #673AB7;
 }
 
-#aufbau-eines-tags {
+.d {
   background-color: #3F51B5;
 }
 
-#text-formatieren {
+.e {
   background-color: #2196F3;
 }
 
-#listen {
+.f {
   background-color: #03A9F4;
 }
 
-#bilder {
+.g {
   background-color: #00BCD4;
 }
 
-/* Einstieg in CSS */
+.h {
+  background-color: #009688;
+}
+
+.i {
+  background-color: #4CAF50;
+}
+
+.j {
+  background-color: #8BC34A;
+}
+
+.k {
+  background-color: #CDDC39;
+}
+
+.l {
+  background-color: #FFEB3B;
+}
+
+.m {
+  background-color: #FFC107;
+}
+
+.n {
+  background-color: #FF9800;
+}
+
+.o {
+  background-color: #FF5722;
+}
+
+.p {
+  background-color: #795548;
+}
+
+.q {
+  background-color: #795548;
+}
