@@ -15,16 +15,24 @@
       a {
         color: black;
       }
+
+      #unterueberschrift {
+        color: yellow;
+      }
+
+      .menu-eintrag {
+        color: rgb(28, 161, 110);
+      }
     </style>
   </head>
 
   <body>
     <!-- ab hier kommen die Überschriften -->
     <h1>IT & Technik-AG an der Mörike-Schule</h1>
-    <h2>Computer, HTML, Raspberry Pi und Python</h2>
+    <h2 id="unterueberschrift">Computer, HTML, Raspberry Pi und Python</h2>
 
     <!-- hier sollen noch weitere Links eingefügt werden -->
-    <a href="wiki.html" target="_blank">Wiki</a>
+    <a class="menu-eintrag" href="wiki.html" target="_blank">Wiki</a>
 
     <p>In der IT & Technik-AG an der Mörike-Schule lernen Schüler der 6. & 7. Klassen, wie man Webseiten mit HTML erstellt.</p>
 
@@ -36,5 +44,26 @@
     <ol>
       <li>Grundlagen</li>
       <li>Webseite erstellen mit HTML und CSS</li>
+    </ol>
+
+    <!-- Leiter der AG -->
+    <h3>Leiter der IT & Technik-AG</h3>
+    <table>
+      <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+      </tr>
+      <tr>
+        <td>Leon</td>
+        <td>W.</td>
+      </tr>
+      <tr>
+        <td>Linus</td>
+        <td>A.</td>
+      </tr>
+      <tr>
+        <td>Lucas</td>
+        <td>H.</td>
+      </tr>
   </body>
 </html>
