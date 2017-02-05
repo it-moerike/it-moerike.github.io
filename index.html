@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>IT & Technik-AG an der Mörike-Schule</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
       body {
         background-color: rgb(138, 210, 239);
@@ -12,24 +15,34 @@
         color: rgb(46, 106, 25);
       }
 
+      p, a, table, li {
+        font-family: 'Roboto', sans-serif;
+      }
+
       a {
         color: black;
+        font-family: 'Roboto', sans-serif;
       }
 
       #unterueberschrift {
         color: yellow;
       }
 
+      .ueberschriften {
+        font-family: 'Roboto Mono', monospace;
+      }
+
       .menu-eintrag {
         color: rgb(28, 161, 110);
+        font-weight: bold;
       }
     </style>
   </head>
 
   <body>
     <!-- ab hier kommen die Überschriften -->
-    <h1>IT & Technik-AG an der Mörike-Schule</h1>
-    <h2 id="unterueberschrift">Computer, HTML, Raspberry Pi und Python</h2>
+    <h1 class="ueberschriften">IT & Technik-AG an der Mörike-Schule</h1>
+    <h2 id="unterueberschrift" class="ueberschriften">Computer, HTML, Raspberry Pi und Python</h2>
 
     <!-- hier sollen noch weitere Links eingefügt werden -->
     <a class="menu-eintrag" href="wiki.html" target="_blank">Wiki</a>
