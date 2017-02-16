@@ -220,6 +220,76 @@
         </div>
 
       </div>
+      <div id="text-formatieren-mit-css">
+        <div class="kapitel">
+          <h2>Text formatieren mit CSS</h2>
+        </div>
+
+        <div class="o">
+          <h3>Schriftart</h3>
+          <p>Mit CSS kann man alle Schriftarten, die auf dem Computer installiert sind verwenden. Es sollten mehrere Schriftarten angegeben werden, damit falls eine Schriftart nicht geladen werden, noch eine Schriftart, auf die dann zurückgegriffen werden kann vorhanden ist:</p>
+          <code>
+            p {<br>
+              font-family: "Arial", sans-serif;<br>
+            }
+          </code>
+          <p>Außerdem kann man aber auch noch externe Schriftarten von <a href="fonts.google.com" target="_blank">Google Fonts</a> verwenden. Dafür muss die Schriftart noch im Head-Bereich importiert werden:</p>
+          <code>
+             &lt;link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"&gt;<br><br>
+             p {<br>
+               font-family: 'Oswald', sans-serif;<br>
+             }
+          </code>
+        </div>
+
+        <div class="p">
+          <h3>Schriftgröße</h3>
+          <p>Auch die Schriftgröße lässt sich mit CSS leicht in Pixeln angeben:</p>
+          <code>
+            p {<br>
+              font-size: 20px;<br>
+            }
+          </code>
+        </div>
+
+        <div class="a">
+          <h3>Textausrichtung</h3>
+          <p>Ob ein Text linksbündig, mittig oder rechtsbündig sein soll, lässt sich wie folgt festlegen:</p>
+          <code>
+            p {<br>
+              text-align: left;<br>
+              text-align: center;<br>
+              text-align: right;<br>
+            }
+          </code>
+        </div>
+
+        <div class="b">
+          <h3>Schriftstil</h3>
+          <p>Den Schriftstil kann man mit HTML (&lt;strong&gt; / &lt;i&gt;) oder auch mit CSS festlegen:</p>
+          <code>
+            #meineid {<br>
+              font-weight: bold;<br>
+              font-style: italic;<br>
+            }
+          </code>
+      </div>
+
+      <div id="tools">
+        <div class="kapitel">
+          <h2>Tools</h2>
+        </div>
+
+        <div class="c">
+          <h3>Element untersuchen</h3>
+          <p>Wenn ihr mit der rechten Maustaste auf eine Webseite klickt, findet ihr den Punkt "Element untersuchen". Hier seht ihr den HTML-Code der Webseite und auch unter "Style Editor" auch die CSS-Regeln. Dies kann nützlich sein, um herauszufinden, wie ein Freund (oder jemand anderes) seine Webseite erstellt hat.</p>
+        </div>
+
+        <div class="d">
+          <h3>Fehler-Suche</h3>
+          <p>Auf <a href="https://validator.w3.org/" target="_blank">dieser Webseite</a> könnt ihr eure Webseite auf Richtigkeit überprüfen. 
+        </div>
+      </div>
     </main>
   </body>
 <html>
