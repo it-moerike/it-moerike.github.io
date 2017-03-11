@@ -28,6 +28,10 @@
         color: yellow;
       }
 
+      #header {
+        text-align: center;
+      }
+
       .ueberschriften {
         font-family: 'Roboto Mono', monospace;
       }
@@ -36,17 +40,37 @@
         color: rgb(28, 161, 110);
         font-weight: bold;
       }
+
+      #nach-oben {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: yellow;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      #nach-oben:hover {
+        color: gray;
+      }
+
     </style>
   </head>
 
   <body>
-    <!-- ab hier kommen die Überschriften -->
-    <h1 class="ueberschriften">IT & Technik-AG an der Mörike-Schule</h1>
-    <h2 id="unterueberschrift" class="ueberschriften">Computer, HTML, Raspberry Pi und Python</h2>
+    <div id="header">
+      <!-- ab hier kommen die Überschriften -->
+      <h1 class="ueberschriften">IT & Technik-AG an der Mörike-Schule</h1>
+      <h2 id="unterueberschrift" class="ueberschriften">Computer, HTML, Raspberry Pi und Python</h2>
 
-    <!-- hier sollen noch weitere Links eingefügt werden -->
-    <a class="menu-eintrag" href="wiki.html" target="_blank">Wiki</a>
-    <a class="menu-eintrag" href="https://github.com/it-moerike/logbook" target="_blank">Logbook</a>
+      <div id="menu"
+        <!-- hier sollen noch weitere Links eingefügt werden -->
+        <a class="menu-eintrag" href="wiki.html" target="_blank">Wiki</a>
+        <a class="menu-eintrag" href="https://github.com/it-moerike/logbook" target="_blank">Logbook</a>
+      </div>
+
+    </div>
 
     <p>In der IT & Technik-AG an der Mörike-Schule lernen Schüler der 6. & 7. Klassen, wie man Webseiten mit HTML erstellt.</p>
 
@@ -79,5 +103,8 @@
         <td>Lucas</td>
         <td>H.</td>
       </tr>
+    </table>
+
+    <a id="nach-oben" href="#">Nach oben</a>
   </body>
 </html>

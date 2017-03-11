@@ -27,6 +27,10 @@ code {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
+img {
+  margin-bottom: 10px;
+}
+
 header {
   color: black;
   font-size: 1em;
