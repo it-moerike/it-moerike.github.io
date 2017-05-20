@@ -1,0 +1,382 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wiki | IT & Technik-AG an der Mörike-Schule</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="htmlwiki.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|ABeeZee" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>IT & Technik-AG an der Mörike-Schule</h1>
+      <h1>Wiki</h1>
+      <p>Mit HTML & CSS kann man tolle Webseiten erstellen</p>
+    </header>
+
+    <main>
+      <div id="inhalt">
+        <h2>Inhalt</h2>
+
+        <ol>
+          <li><a href="#einstieg-in-html">Einstieg in HTML</a></li>
+          <li><a href="#einstieg-in-css">Einstieg in CSS</a></li>
+          <li><a href="#weitere-html-tags">Weitere HTML Tags</a></li>
+        </ol>
+      </div>
+
+      <div id="einstieg-in-html">
+        <div class="kapitel">
+          <h2>Einstieg in HTML</h2>
+        </div>
+
+        <div class="a">
+          <h3>Grundgerüst</h3>
+          <p>Das Grundgerüst eines HTMT5-Dokuments sieht folgendermaßen aus:</p>
+          <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;meta charset="utf-8"&gt;<br>
+            &lt;title&gt;Titel deiner Webseite&lt;/title&gt;<br>
+            &lt;style&gt;<a href="#einstieg-in-css">Style-Informationen</a>&lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            ...<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+          </code>
+        </div>
+
+        <div class="b">
+          <h3>Text</h3>
+          <p>Um einen normalen Text zu erstellen verwendet man folgenden Tag:</p>
+          <code>&lt;p&gt;Hier ist dein Text&lt;/p&gt;</code>
+
+          <h3>Überschriften</h3>
+          <p>Es gibt sechs vierschiedene Größen von Überschriften, vobei h1 die größe ist:</p>
+          <code>
+            &lt;h1&gt;Überschrift 1&lt;/h1&gt;<br>
+            &lt;h2&gt;Überschrift 2&lt;/h2&gt;<br>
+            &lt;h3&gt;Überschrift 3&lt;/h3&gt;<br>
+            &lt;h4&gt;Überschrift 4&lt;/h4&gt;<br>
+            &lt;h5&gt;Überschrift 5&lt;/h5&gt;<br>
+            &lt;h6&gt;Überschrift 6&lt;/h6&gt;<br>
+          </code>
+        </div>
+
+        <div class="c">
+          <h3>Zeilenumbruch</h3>
+          <p>Wenn man Zeilenumbrüche im HTML-Dokument macht, werden diese nicht automatisch auch auf der Webseite gemacht. Dafür braucht man einen extra Tag am Ende der Zeile:</p>
+          <code>
+            &lt;p&gt;<br>
+            Zeile 1&lt;br&gt;<br>
+            Zeile 2&lt;br&gt;<br>
+            Zeile 3&lt;br&gt;<br>
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <div class="d">
+          <h3>Aufbau eines Tags</h3>
+          <p>Das folgende Bild zeigt den Aufbau eines HTML-Tags:</p>
+          <figure>
+            <img src="https://cdn.kastatic.org/ka-perseus-images/2b914caea7fdf9df8ff30e4780096d38624cab4f.png">
+            <figcaption>Quelle: KhanAcademy</figcaption>
+          </figure>
+        </div>
+
+        <div class="e">
+          <h3>Text formatieren</h3>
+          <p>Um einen Text hervorzuheben oder kursiv zu stellen, gibt es zwei Tags, die man um die Wörter herumschreibt:</p>
+          <code>&lt;p&gt;Dieses Wort ist &lt;strong&gt;dick&lt;/strong&gt; und dieses &lt;em&gt;kursiv&lt;/em&gt;.&lt;/p&gt;</code>
+        </div>
+
+        <div class="f">
+          <h3>Listen</h3>
+          <p>Es gibt numerierte und unnumerierte Listen:</p>
+          <code>
+            &lt;ol&gt;<br>
+            &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
+            &lt;li&gt;Listenpunkt in einer nummerierten Liste&lt;/li&gt;<br>
+            &lt;/ol&gt;<br>
+            <br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
+            &lt;li&gt;Listenpunkt in einer unnummerierten Liste&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+          </code>
+        </div>
+
+        <div class="g">
+          <h3>Bilder</h3>
+          <p>Auch Bilder können auf einer Webseite eingebunden werden. Wenn das Bild sich auf einer anderen Webseite des Internets befindet wird die URL des Bildes eingefügt:</p>
+          <code>&lt;img src="http://wikipedia.org/bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
+          <p>Das alt-Attribut legt einen Bildtitel fest, der angezeigt wird falls, das Bild gelöscht wurde oder für Leute, die nicht sehen können. Es ist also, wichtig immer ein Alt-Attribut festzulegen, damit jeder deine Webseite versteht. Das width-Attribut left die Breite des Bildes fest. Hier kann mit Pixeln (500px) oder mit Prozentzahlen (50%) gearbeitet werden.</p>
+          <p>Wenn Bilder in dem selben Ordner, wie die HTML-Datei liegen, kann das Bild auch so eingefügt werden:</p>
+          <code>&lt;img src="bild.jpg" alt="Bildtitel" width="500px"&gt;</code>
+        </div>
+      </div>
+
+      <div id="einstieg-in-css">
+        <div class="kapitel">
+          <h2>Einstieg in CSS</h2>
+        </div>
+
+        <div class="h">
+          <h3>Basics</h3>
+          <p>CSS ist eine Programmiersprache, die genutzt wird, um das Aussehen der Webseite zu verändern. Die Style-Informationen werden standardmäßig im Style-Tag des Headers eingefügt.</p>
+          <p>Um alle Elemente desselben Tags zu verwenden, wird der Name des Tags verwendet:</p>
+          <code>p {<br>
+              color: blue;<br>
+            }
+          </code>
+        </div>
+
+        <div class="i">
+          <h3>ID's</h3>
+          <p>ID's werden verwendet, um ein bestimmtes Element anzusprechen. Diese werden folgenderweiße festgelegt:</p>
+          <code>&lt;p id="großer-text"&gt;...&lt;/p&gt;</code>
+          <p>In CSS werden ID's mit einer vorgestellten Raute angesprochen:</p>
+          <code>#großer-text {<br>
+              color: red;<br>
+            }
+          </code>
+        </div>
+
+        <div class="j">
+          <h3>Klassen</h3>
+          <p>Wenn man mehrere Elemente ansprechen möchte, können Klassen verwendet werden. Dabei wird jedes Element folgendermaßen angesprochen:</p>
+          <code>
+            &lt;p class="kleine-texte"&gt;...&lt;/p&gt;<br>
+            &lt;h1 class="kleine-texte"&gt;...&lt;/p&gt;<br>
+          </code>
+          <p>Um Klassen in CSS anzusprechen werden vorangestellte Punkte verwendet:</p>
+          <code>
+            .kleine-texte {<br>
+              color: green;<br>
+            }
+          </code>
+        </div>
+
+        <div class="k">
+          <h3>Farben</h3>
+          <p>Mit folgendem Tag kann die Farbe der Schrift verändert werden:</p>
+          <code>p {<br>
+              color: orange;<br>
+            }
+          </code>
+          <p>Auch die Hintergrundfarbe von Schrift kann verändert werden:</p>
+          <code>p {<br>
+              background-color: blue;
+            }
+          </code>
+          <p>Wenn man die Hintergrundfarbe der ganzen Webseite verändern möchte, gibt man <code>body</code> (hier: anstelle von p) als Element an.</p>
+          <br>
+          <p>Wenn man nicht nur die wenigen Standardfarben (wie red, blue, green, orange ...) verwenden will, kann man auch den RGB-Farbecode verwenden. Auf <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool" target="_blank">dieser Webseite</a> findet man ein Tool um den Farbcode von anderen Farben herauszufinden:</p>
+          <code>p {<br>
+              rgb(193, 66, 66)<br>
+            }
+          </code>
+        </div>
+      </div>
+
+      <div id="weitere-html-tags">
+        <div class="kapitel">
+          <h2>Weitere HTML Tags</h2>
+        </div>
+
+        <div class="l">
+          <h3>Links</h3>
+          <p>Um andere Webseiten zu verlinken, wird der <code>a</code>-Tag verwendet:</p>
+          <code>&lt;a href="http://wikipedia.org"&gt;Wikipedia&lt;/&gt;</code>
+          <p>Wenn man möchte kann man auch auch auf eine andere HTML-Datei verlinken, die sich im selben Ordner befindet:</p>
+          <code>&lt;a href="über-mich.html"&gt;Über mich&lt;/a&gt;</code>
+          <p>Außerdem ist es auch möglich, dass man zu einer anderen ID im selben Dokument springt</p>
+          <code>&lt;a href="#großer-text"&gt;Springe zu großer Text&lt;/a&gt;</code>
+        </div>
+
+        <div class="m">
+          <h3>Kommentare</h3>
+          <p>Kommentare sind sehr sinnvoll, um das Dokument zu gliedern und weitere Angaben für Teamkollegen zu machen. Sie werden vom Browser ignoriert und nicht auf der Webseite angezeigt</p>
+          <code>&lt;!-- Hier steht der Kommentar --&gt;</code>
+        </div>
+
+        <div class="n">
+          <h3>Tabellen</h3>
+          <p>Tabellen können sinnvoll sein, um Informationen übersichtlich darzustellen:</p>
+          <code>
+            &lt;table&gt:
+            &lt;tr&gt;
+            &lt;td&lt&gt;Inhalt&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+          <code>
+          <p>Das folgende Bild erklärt die Wirkung einer Tabelle:</p>
+          <figure>
+            <img src="https://wiki.selfhtml.org/images/0/09/Tabelle-1.svg">
+            <figcaption>Quelle: selfhtml</figcaption>
+          </figure>
+        </div>
+
+      </div>
+      <div id="text-formatieren-mit-css">
+        <div class="kapitel">
+          <h2>Text formatieren mit CSS</h2>
+        </div>
+
+        <div class="o">
+          <h3>Schriftart</h3>
+          <p>Mit CSS kann man alle Schriftarten, die auf dem Computer installiert sind verwenden. Es sollten mehrere Schriftarten angegeben werden, damit falls eine Schriftart nicht geladen werden, noch eine Schriftart, auf die dann zurückgegriffen werden kann vorhanden ist:</p>
+          <code>
+            p {<br>
+              font-family: "Arial", sans-serif;<br>
+            }
+          </code>
+          <p>Außerdem kann man aber auch noch externe Schriftarten von <a href="fonts.google.com" target="_blank">Google Fonts</a> verwenden. Dafür muss die Schriftart noch im Head-Bereich importiert werden:</p>
+          <code>
+             &lt;link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"&gt;<br><br>
+             p {<br>
+               font-family: 'Oswald', sans-serif;<br>
+             }
+          </code>
+        </div>
+
+        <div class="p">
+          <h3>Schriftgröße</h3>
+          <p>Auch die Schriftgröße lässt sich mit CSS leicht in Pixeln angeben:</p>
+          <code>
+            p {<br>
+              font-size: 20px;<br>
+            }
+          </code>
+        </div>
+
+        <div class="a">
+          <h3>Textausrichtung</h3>
+          <p>Ob ein Text linksbündig, mittig oder rechtsbündig sein soll, lässt sich wie folgt festlegen:</p>
+          <code>
+            p {<br>
+              text-align: left;<br>
+              text-align: center;<br>
+              text-align: right;<br>
+            }
+          </code>
+        </div>
+
+        <div class="b">
+          <h3>Schriftstil</h3>
+          <p>Den Schriftstil kann man mit HTML (&lt;strong&gt; / &lt;i&gt;) oder auch mit CSS festlegen:</p>
+          <code>
+            #meineid {<br>
+              font-weight: bold;<br>
+              font-style: italic;<br>
+            }
+          </code>
+      </div>
+
+      <div id="tools">
+        <div class="kapitel">
+          <h2>Tools</h2>
+        </div>
+
+        <div class="c">
+          <h3>Element untersuchen</h3>
+          <p>Wenn ihr mit der rechten Maustaste auf eine Webseite klickt, findet ihr den Punkt "Element untersuchen". Hier seht ihr den HTML-Code der Webseite und auch unter "Style Editor" auch die CSS-Regeln. Dies kann nützlich sein, um herauszufinden, wie ein Freund (oder jemand anderes) seine Webseite erstellt hat.</p>
+        </div>
+
+        <div class="d">
+          <h3>Fehler-Suche</h3>
+          <p>Auf <a href="https://validator.w3.org/" target="_blank">dieser Webseite</a> könnt ihr eure Webseite auf Richtigkeit überprüfen.</p>
+        </div>
+      </div>
+
+      <div id="container">
+        <div class="kapitel">
+          <h2>Container</h2>
+        </div>
+
+        <div class="e">
+          <h3>Was ist ein Container?</h3>
+          <p>Ein Kontainer dient zur Gliederung und Gruppierung von verschiedenen Elementen (z. B. Überschrift, Text oder Bild) auf einer Webseite.
+            Sinnvoll wäre es zum Beispiel, wenn man einen Container für den Header-Teil, einen für den Hauptteil und einen für den Footer-Teil erstellt.
+            Container können auch ineinander verschachtelt sein. So kann man zum Beispiel den Hauptteil in einzelne Abschnitte einteilen:</p>
+          <code>
+            &lt;div id="meincontainer"&gt;<br>
+            &lt;p&gt;...&lt;/p&gt;<br>
+            &lt;img&gt;<br>
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <div class="f">
+          <h3>Container formatieren</h3>
+          <p>Für einen Container kann man zum Beispiel die Hintergrundfarbe verändern:</p>
+          <code>
+            #meincontainer {<br>
+              background-color: green;<br>
+            }
+          </code>
+          <p>Außerdem kann man auch alle anderen CSS-Tags verwenden: Zum Beispiel die Schriftart:</p>
+          <code>
+            #meincontainer {<br>
+              font-family: sans-serif;<br>
+            }
+          </code>
+        </div>
+
+        <div class="g">
+          <h3>Größe von Containern</h3>
+          <p>Mit folgenden CSS-Tags, kann man die Breite (width) und die Höhe (height) eines Containers festlegen:</p>
+          <code>
+            #meincontainer {<br>
+              width: 100px;<br>
+              height: 50px;<br>
+            }
+          </code>
+          <p>Die Breite kann man nicht nur in Pixeln, sondern auch in Prozent angeben:</p>
+          <code>
+            #meincontainer {<br>
+              width: 50%;<br>
+            }
+          </code>
+          <p>Wenn man hier 50% auswählt, hat der Container genau die Hälfte des Fensters.</p>
+        </div>
+
+        <div class="h">
+          <h3>Abstand zur Kante</h3>
+          <p>Wenn man den Inhalt des Containers nicht direkt an den Rand pressen möchte, kann man einen Innenabstand (padding) festlegen:</p>
+          <code>
+            #meincontainer {<br>
+              padding: 5px;;<br>
+            }
+          </code>
+          <p>Aber auch den Abstand vom Rand zum nächsten Container kann man festlegen. Das ist dann der Außenabstand (margin):</p>
+          <code>
+            #meincontainer {<br>
+              margin: 10px;<br>
+            }
+          </code>
+          <figure>
+            <img src="https://wiki.selfhtml.org/images/thumb/f/f3/Box-Modell.svg/600px-Box-Modell.svg.png">
+            <figcaption>Quelle: selfhtml</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div id="weiteres">
+        <div class="kapitel">
+          <h2>Weiteres</h2>
+        </div>
+
+        <div class="i">
+          <h3>Externe Stylesheets einbinden</h3>
+          <p>Oft kann ist es sinnvoll, die CSS-Information in eine externe Datei zu verschieben. Wenn wir jetzt zum Beispiel mehrere Unterseiten haben, die alle gleich aussehen sollen, müssen wie die CSS-Information nicht in jede einzelne Datei schreiben.</p>
+          <p>Dafür erstellen wir eine neue Datei mit dem Namen <em>style.css</em> im gleichen Ordner, wie auch unsere Webseite liegt. Alles, was zwischen den beiden &lt;style&gt;-Tags liegt verschieben wir jetzt in diese Datei.</p>
+          <p>Nun müssen wir in unsere HTML-Datei noch folgende Zeile in den &lt;head&gt;-Bereich einfügen:</p>
+          <code>&lt;link&gt; href="style.css" rel="stylesheet" type="text/css"&lt;/link&gt;</code>
+        </div>
+      </div>
+    </main>
+  </body>
+<html>
