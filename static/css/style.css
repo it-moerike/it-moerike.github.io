@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button {
+  text-decoration: none;
+  background-color: rgb(107, 161, 130);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: rgb(59, 112, 82);
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  width: 100%;
+  height: 60px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+header nav ul li {
+  list-style: none;
+  float: left;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 20px 0 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: rgb(107, 161, 130);
+}
+
+header #header-text {
+  height: calc(100vh - 60px);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+header #header-text h1 {
+  font-size: 6em;
+  text-align: center;
+  margin: 0
+}
+
+header #header-text p {
+  text-align: center;
+}
+
+/* Main */
+
+main {
+  height: auto;
+  width: auto;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  text-align: center;
+}
+
+#description {
+  background-color: white;;
+  text-align: center;
+}
+
+#description h1 {
+  font-size: 3em;
+  line-height: 0;
+}
+
+#topics {
+  background-color: #d2d2d2;
+}
+
+#topic-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.topic-img {
+  width: 70%;
+  position: relative;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+.topic-img:before {
+  content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.topic-wrapper p {
+  margin-bottom: 30px;
+}
+
+#topic-website .topic-img {
+  background: url(/static/img/topic-website.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#topic-python .topic-img {
+  background: url(/static/img/topic-python.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#teacher {
+  background-color: white;
+}
+
+#teacher-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.teacher-img {
+  width: 70%;
+  position: relative;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+.teacher-img:before {
+  content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+#teacher-lucas .teacher-img {
+  background: url(/static/img/teacher-lucas.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Mobile View */
+@media (max-width: 750px) {
+  header #header-text p {
+    font-size: 1.5em;
+  }
+
+  #topic-wrapper {
+    display: block;
+  }
+
+  #teacher-wrapper {
+    display: block;
+  }
+
+  #topic-website, #topic-python, #teacher-leon, #teacher-linus, #teacher-lucas {
+    /*border: 1px solid black;*/
+    margin-bottom: 40px;
+  }
+}

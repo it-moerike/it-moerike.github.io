@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/img/maintainance-astronaut.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+}
+
+.button {
+  text-decoration: none;
+  background-color: rgb(107, 161, 130);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: rgb(59, 112, 82);
+}

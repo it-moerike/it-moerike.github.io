@@ -1,110 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>IT & Technik-AG an der Mörike-Schule</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IT & Technik-AG</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <style>
-      body {
-        background-color: rgb(138, 210, 239);
-      }
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/it-moerike/logbook/blob/master/2017-2018.md" target="_blank">Logbook</a></li>
+        <li><a href="https://github.com/it-moerike" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
 
-      h3 {
-        color: rgb(46, 106, 25);
-      }
-
-      p, a, table, li {
-        font-family: 'Roboto', sans-serif;
-      }
-
-      a {
-        color: black;
-        font-family: 'Roboto', sans-serif;
-      }
-
-      #unterueberschrift {
-        color: yellow;
-      }
-
-      #header {
-        text-align: center;
-      }
-
-      .ueberschriften {
-        font-family: 'Roboto Mono', monospace;
-      }
-
-      .menu-eintrag {
-        color: rgb(28, 161, 110);
-        font-weight: bold;
-      }
-
-      #nach-oben {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        background-color: yellow;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-      }
-
-      #nach-oben:hover {
-        color: gray;
-      }
-
-    </style>
-  </head>
-
-  <body>
-    <div id="header">
-      <!-- ab hier kommen die Überschriften -->
-      <h1 class="ueberschriften">IT & Technik-AG an der Mörike-Schule</h1>
-      <h2 id="unterueberschrift" class="ueberschriften">Computer, HTML, Raspberry Pi und Python</h2>
-
-      <div id="menu"
-        <!-- hier sollen noch weitere Links eingefügt werden -->
-        <a class="menu-eintrag" href="htmlwiki.html" target="_blank">Wiki</a>
-        <a class="menu-eintrag" href="https://github.com/it-moerike/logbook" target="_blank">Logbook</a>
-      </div>
-
+    <div id="header-text">
+      <h1>IT & Technik-AG</h1>
+      <p>Evangelisches Mörike Gymnasium und Realschule</p>
     </div>
+  </header>
 
-    <p>In der IT & Technik-AG an der Mörike-Schule lernen Schüler der 6. & 7. Klassen, wie man Webseiten mit HTML erstellt.</p>
+  <main>
+    <section id="description">
+      <p>In der IT & Technik-AG lernen Schüler der 6. - 8. Klassen, wie man Webseiten baut und programmiert.</p>
+      <h1>Jeden Freitag</h1>
+      <h2>13:45 - 14:45</h2>
+      <h2>Computerraum</h2>
+    </section>
 
-    <img src="pictures/dual-screen.png" alt="zwei Bildschirme" width="500px">
-    <!-- hier soll noch ein zweites Bild eingefügt werden -->
+    <section id="topics">
+      <h2>Themen</h2>
+      <div id="topic-wrapper">
+        <div id="topic-website">
+          <div class="topic-img"></div>
+          <h3>Webseite</h3>
+          <p>Ihr lernt, wie ihr beeindruckende Webseite mit HTML und CSS schreibt.</p>
+          <a class="button" href="/wiki/website.html" target="_blank">Wiki</a>
+        </div>
+        <div id="topic-python">
+          <div class="topic-img"></div>
+          <h3>Python</h3>
+          <p>Wir wollen euch das Prorammieren beibringen und Code schreiben.</p>
+          <a class="button" href="/wiki/python.html" target="_blank">Wiki</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Themen werden im Laufe der ergänzt -->
-    <h3>Unsere Themen</h3>
-    <ol>
-      <li>Grundlagen</li>
-      <li>Webseite erstellen mit HTML und CSS</li>
-    </ol>
+    <section id="teacher">
+      <h2>Leiter</h2>
+      <div id="teacher-wrapper">
+        <div id="teacher-leon">
+          <div class="teacher-img"></div>
+          <h3>Leon</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque.</p>
+          <a class="button" href="" target="_blank">Webseite</a>
+        </div>
+        <div id="teacher-linus">
+          <div class="teacher-img"></div>
+          <h3>Linus</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque.</p>
+          <a class="button" href="" target="_blank">Webseite</a>
+        </div>
+        <div id="teacher-lucas">
+          <div class="teacher-img"></div>
+          <h3>Lucas</h3>
+          <p>Lucas interessiert sich für Webentwicklung mit Python und baut gerne Webseiten.</p>
+          <a class="button" href="https://lucas-hild.de" target="_blank">Webseite</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Leiter der AG -->
-    <h3>Leiter der IT & Technik-AG</h3>
-    <table>
-      <tr>
-        <th>Vorname</th>
-        <th>Nachname</th>
-      </tr>
-      <tr>
-        <td>Leon</td>
-        <td>W.</td>
-      </tr>
-      <tr>
-        <td>Linus</td>
-        <td>A.</td>
-      </tr>
-      <tr>
-        <td>Lucas</td>
-        <td>H.</td>
-      </tr>
-    </table>
+    <!-- TODO: Contact form -->
+  </main>
 
-    <a id="nach-oben" href="#">Nach oben</a>
-  </body>
+</body>
 </html>
