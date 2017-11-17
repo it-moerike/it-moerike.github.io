@@ -113,13 +113,19 @@ section h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
-  width: 95%;
   margin: auto;
   text-align: center;
 }
 
+.topic-card {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
 .topic-img {
-  width: 70%;
+  width: 100%;
   position: relative;
   background-color: pink;
   margin: 0 auto;
@@ -128,7 +134,15 @@ section h2 {
 .topic-img:before {
   content: "";
 	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
+	padding-top: 65%; 	/* initial ratio of 1:1*/
+}
+
+.topic-card h3, .topic-card p {
+  margin: 30px 10px;
+}
+
+.topic-card .button {
+  margin: 50px;
 }
 
 .topic-wrapper p {
@@ -172,7 +186,11 @@ section h2 {
 .teacher-img:before {
   content: "";
 	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
+	padding-top: 100%; /*initial ratio of 1:1*/
+}
+
+#teacher .button {
+  padding: 50px 0:
 }
 
 #teacher-lucas .teacher-img {
