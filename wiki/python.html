@@ -4,16 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Webseiten-Wiki | IT & Technik-AG</title>
+  <title>Python-Wiki | IT & Technik-AG</title>
 
   <link rel="stylesheet" type="text/css" href="/static/css/wiki-python.css">
 </head>
 <body>
   <main>
-    <h1>Wir arbeiten gerade noch an dieser Seite</h1>
-    <h2>Komme bald wieder</h2>
+    <header>
+      <a href="/"><h1>IT & Technik-AG</h1></a>
+      <h2>Python-Wiki</h2>
+    </header>
 
-    <a href="/" class="button">Zurück</a>
+    <section>
+      <h3>Rechnen</h3>
+      <p>Wenn Du normalerweise eine Rechen-Aufgabe hast, rechnest Du sie im Kopf oder Du verwendest einen Taschenrechner. Mit Python kann man jedoch auch rechnen. Wichtig ist dabei, dass Du folgende Rechenzeichen verwendest:</p>
+      <ul>
+        <li>Addition: +</li>
+        <li>Subtraktion: -</li>
+        <li>Multiplikation: *</li>
+        <li>Division: /</li>
+      </ul>
+      <code>
+    <pre>&gt;&gt;&gt; 16 + 3
+19
+&gt;&gt;&gt; 16 * 3
+48</pre>
+      </code>
+    </section>
+
+    <section>
+      <h3>Variablen</h3>
+      <p>Eine Variable ist im allgemeinsten Sinne einfach ein Behälter, in dem bestimmte Werte gespeichert werden können. Dies können zum Beispiel Zahlen, Zeichenketten oder Listen sein. Man kann im Verlauf des Programms auf diese Variablen zugreifen oder einen neuen Wert festlegen.</p>
+      <code>
+<pre>meine_zahl = 42
+meine_zeichenkette = "Hallo Welt"</pre>
+      </code>
+    </section>
+
+    <section>
+      <h3>Kommentare</h3>
+      <p>Beim Programmieren wird oft mit Kommentaren gearbeitet, die beim Verständnis helfen. Wenn Du zum Beispiel ein Programm schreibst und es in einem halben Jahr wieder öffnest, wirst Du wahrscheinlich nicht mehr alles verstehen. Deshalb ist es wichtig, dass Du beschreibst, was Du an den jeweiligen Stellen gemacht hast.</p>
+      <code>
+<pre># Dieses Programm gibt einen Satz aus
+
+# Hier wird eine Variable festgelegt
+zahl = 4
+
+# Hier wird dem Nutzer die Variable ausgegeben
+print(zahl)</pre>
+      </code>
+    </section>
+
+    <section>
+      <h3>Eingabe & Ausgabe</h3>
+      <p>Ein Programm ist immer oft nach dem EVA-Prinzip aufgebaut:</p>
+      <ul>
+        <li><strong>E</strong>ingabe: Der Nutzer gibt die Daten ein.</li>
+        <li><strong>V</strong>erarbeitung: Der Computer rechnet mit den eingegebenen Daten.</li>
+        <li><strong>A</strong>usgabe: Der Computer gibt die errechnetet Daten zurück</li>
+      </ul>
+      <code>
+<pre># Eingabe
+zahl = input("Gib eine Zahl ein: ")
+
+# Verarbeitung
+drittel = int(zahl) / 3
+
+# Ausgabe
+print("Ein Drittel der Zahl beträgt: " + str(drittel))</pre>
+      </code>
+    </section>
+
+    <section>
+      <h3>While-Schleife</h3>
+      <p>Wenn Du möchtest, dass Dein Programm unendlich oft läuft, kannst Du eine While-Schleife einbauen.</p>
+      <code>
+<pre>while True:
+    print("Hallo Welt!")
+    # CODE</pre>
+      </code>
+    </section>
   </main>
 </body>
 </html>
